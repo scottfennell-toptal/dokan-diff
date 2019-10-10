@@ -42,6 +42,7 @@ if (wc_tax_enabled()) {
     $show_tax_columns = !$legacy_order || sizeof($order_taxes) === 1;
 }
 ?>
+aaaaaaa
 <div class="woocommerce_order_items_wrapper wc-order-items-editable">
     <table cellpadding="0" cellspacing="0" class="woocommerce_order_items dokan-table dokan-table-strip">
         <thead>
@@ -134,7 +135,7 @@ if (wc_tax_enabled()) {
         <?php
     }
     ?>
-    <table class="wc-order-totals">
+    <table class="wc-order-totals">aaaaaaaaa
         <?php if ($order->get_total_discount()) { ?>
             <tr>
                 <td><?php _e('Discount', 'dokan'); ?> <span class="tips" data-tip="<?php _e('This is the total discount. Discounts are defined per line item.', 'dokan'); ?>">[?]</span>:</td>

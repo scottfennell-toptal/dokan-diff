@@ -12,10 +12,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+$the_acc = get_user_by("login", $data['seller_name']);
 
 echo "= " . $email_heading . " =\n\n";
 ?>
-<?php _e( "Hi ".$data['seller_name'], 'dokan' );  echo " \n";?>
+<?php _e( "Hi ".$the_acc->first_name, 'dokan' );  echo " \n";?>
 <?php _e( 'Your refund request is '.$data['status'] , 'dokan' );  echo " \n";?>
 <?php _e( 'Order ID : '.$data['order_id'], 'dokan' );  echo " \n";?>
 <?php _e( 'Refund Amount : '.$data['order_id'], 'dokan' );  echo " \n";?>
