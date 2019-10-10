@@ -12,9 +12,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+$the_acc = get_user_by("login", $data['seller_name']);
+
 ?>
 <p>
-    <?php _e( "Hi ".$data['seller_name'], 'dokan' ); ?>
+    <?php _e( "Hi ".$the_acc->first_name, 'dokan' ); ?>
 </p>
 <p>
     <?php _e( 'Your refund request is '.$data['status'] , 'dokan' ); ?>
